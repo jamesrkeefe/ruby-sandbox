@@ -6,3 +6,6 @@ source "https://rubygems.org"
 gem "activesupport"
 gem "awesome_print"
 gem "pry-byebug"
+
+# to run type (in terminal):
+# bundle install
