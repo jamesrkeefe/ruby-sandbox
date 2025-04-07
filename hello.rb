@@ -2,7 +2,6 @@ pp "My first ruby file!"
 pp "Hello world! :)"
 
 require "./goodbye.rb"
-
 require "date"
 
 pp Date.today
@@ -13,8 +12,8 @@ pp Date.today
 
 require "active_support/all"
 # it gets annoying to add/install packages/gems one at a time. why not all at once?
-# require "awesome_print"
-# require "pry-byebug"
+require "awesome_print"
+require "pry-byebug"
 
 pp 1.ordinalize    # => "1st"
 2.ordinalize    # => "2nd"
@@ -36,3 +35,22 @@ pp "equipment".pluralize # => "equipment"
 pp "tables".singularize    # => "table"
 pp "rubies".singularize    # => "ruby"
 pp "equipment".singularize # => "equipment"
+
+pp "Hi! What's your name?"
+
+# I want the user to type their name
+input = gets.gsub("\n","")
+
+
+pp "I can't hear you, #{input.capitalize}. What's your name!"
+
+# 
+# or can use chomp!
+input2 = gets.chomp()
+
+pp "Happy Monday, #{input2.upcase}"
+
+# if you type in terminal this will open a ruby console:
+# irb
+# then to get back to terminal you can hit:
+# exit
